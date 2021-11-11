@@ -1,0 +1,391 @@
+:root{
+    --main-color:rgb(9, 155, 4);
+    --color:black;
+    --color2:yellow;
+    --box-shadow:0 6px 12px rgba(0,0,0,.1)
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+html{
+    scroll-padding-top: 60px;
+}
+
+header{
+    box-shadow: var(--box-shadow);
+    background-color:rgb(232, 252, 232);
+}
+
+#navbar a{
+    text-decoration: none; 
+    margin: 0px 12px;
+    border-radius: 8px;  
+    font-size: 19px;
+    color: var(--color); 
+}
+
+#navbar a:hover,#navbar a.active{
+    
+    background-color: var(--color2);
+    box-shadow: var(--box-shadow);
+}
+
+.container a{
+    text-decoration: none;
+}
+
+header .logo{
+    color: var(--color);
+    font-size: 22px;
+}
+
+
+header span{
+    color: var(--main-color);
+}
+
+#toggle{
+    color: var(--color);
+    cursor: pointer;
+    font-size: 22px;
+}
+
+
+
+section{
+    padding: 20px 0px;
+}
+
+section:nth-child(odd){
+    background: white;
+}
+
+.link-btn{
+    background-color: var(--main-color);
+    color: white;
+    box-shadow: var(--box-shadow);
+    padding:7px 4px;
+    border-radius: 12px;
+    
+    
+}
+
+.link-btn:hover{
+    background: var(--color2);
+    color:black;
+
+}
+
+.content span{
+    color: var(--main-color);
+    font-size: 40px;
+}
+
+.content h3{
+    font-weight: bolder;
+    font-size: 33px;
+
+}
+
+.about .content h3{
+   color: var(--main-color); 
+}
+
+.about .content p{
+    color: var(--color);
+    font-size: 23px;
+}
+
+.heading{
+    color: var(--main-color);
+    font-weight: bolder;
+}
+
+.experts .box{
+    width: 250px;
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    border-radius:5px;
+    padding: 28px;
+    margin: 38px;
+    background: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.experts .box img{
+    background: white;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 18px;
+}
+
+.experts .box .social{
+    position: absolute;
+    top: 3px;
+    right: 15px;
+    transition: 0.5s;
+}
+
+.experts .box .social a{
+    border-radius: 5px;
+    display: block;
+    background: var(--main-color);
+    color: white;
+    height: 22px;
+    width: 22px;
+    margin-top: 5px;
+    padding: 5px;
+}
+
+
+.experts .box .social a:hover{
+    background: var(--color);
+}
+
+.benifits .heading{
+    font-size: 34px;
+}
+
+.benifits .box{
+    width: 260px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+    margin: 25px;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.benifits .box img{
+    background: white;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.contact form{
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+}
+
+.contact form .box,
+.contact form textarea{
+    background: white;
+    border-radius: 5px;
+    font-size: 17px;
+    padding: 10px;
+    margin: 7px 0;
+    width: 100%;
+    text-transform: none;
+    color: var(--color);
+}
+
+.contact form textarea{
+    resize: none;
+    height: 200px;
+}
+
+.contact .map{
+    height: 100%;
+    width: 100%;
+}
+
+.icon a i{
+    padding-top: 38px;
+}
+
+.test .box{
+    box-shadow: var(--box-shadow);
+    width: 300px;
+    border-radius: 5px;
+    background: white;
+}
+
+.test .box .image img{
+    transition: .2s linear;
+}
+
+.test .box:hover .image img{
+    transform: scale(1.1);
+}       
+
+.test .box .content .icon{
+    display: flex;
+    justify-content: space-between;
+}
+
+.test .box .content .icon a{
+    color: var(--color);
+}
+
+.test .box .content .icon a:hover{
+    color: var(--main-color);
+}
+
+.footer{
+    background-color: var(--color);
+}
+
+.footer .box{
+    flex: 1 1 250px;
+}
+
+.footer .box a{
+    color: white;
+}
+
+.footer .box h3,
+.footer .box li,
+.footer .credit{
+    color: white;
+}
+
+.footer .box a:hover{
+    color: var(--main-color);
+}
+
+
+
+.credit{
+    text-align: center;
+}
+
+.home .container{
+    position: relative;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Media Queries*/
+@media only screen and (max-width:991px){
+    #navbar{
+        position: absolute;
+        top: 100%;
+        left: 0; 
+        right: 0;
+        background: white;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        transition: .2s linear;
+    
+        }
+        #navbar a{
+            display: block;
+            width: 100%;
+            margin: 10px;
+        }
+    .home img{
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        
+    } 
+    .home .content{
+        display: block;
+        width: 100%;
+        margin: 10px;
+    }
+
+}
+
+@media(max-width:775px){
+    .home-img{
+       clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    
+}
+
+
+@media (max-width:275px){
+    .home .content span,
+    .home .content h3{
+        font-size: 29px;
+    }
+    .footer .box{
+        font-size: 11px;
+    }
+    
+}
+
+@media(max-width:215px){
+    .test .box .icon a {
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+
+@media (max-width:190px){
+    .benifits .container .box,
+    .experts .container .box,
+    .test .container .box,
+    .contact .set{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    
+}
+
+
+       
+
+
+
+
+
+
+
